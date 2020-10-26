@@ -1,0 +1,68 @@
+.root {
+    -fx-background-color: #282828;
+}
+.button{
+    -fx-background-color: #3d3d3d;
+    -fx-text-fill: #e3d5c3;
+    -fx-border-color: #e3d5c3;
+}
+.radio-button{
+    -fx-text-fill: #e3d5c3;
+}
+
+.axis-label {
+    -fx-text-fill: #e3d5c3;
+    -fx-font-size: 14px;
+}
+
+.chart-plot-background {
+    -fx-background-color: #3d3d3d;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #8f0000;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: #e3d5c3;
+}
+
+/*///////////////////////*/
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.table-view .column-header-background{
+    -fx-background-color: #3d3d3d;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #e3d5c3;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #e3d5c3;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+}
+
+.table-row-cell:selected {
+    -fx-stroke: #8f0000;
+}
