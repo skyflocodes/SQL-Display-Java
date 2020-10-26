@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TableViewController">
+   <children>
+      <AnchorPane layoutX="534.0" layoutY="361.0" />
+      <Button layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeToChartView" text="Chart View" />
+      <TableView layoutX="14.0" layoutY="10.0" prefHeight="342.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="PlaceColumn" prefWidth="35.0" text="Place" />
+          <TableColumn fx:id="UserColumn" prefWidth="96.0" text="User" />
+            <TableColumn fx:id="ScoreColumn" prefWidth="84.0" text="Score" />
+            <TableColumn fx:id="GPUColumn" prefWidth="164.0" text="GPU" />
+            <TableColumn fx:id="CPUColumn" prefWidth="189.0" text="CPU" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
