@@ -31,4 +31,24 @@ public class Participant {
     public void setGPU(String GPU) {
         this.GPU = GPU;
     }
+
+    public int getPlace() {
+        return place;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public String getCPU() {
+        return CPU;
+    }
+
+    public String getGPU() {
+        return GPU;
+    }
 }
