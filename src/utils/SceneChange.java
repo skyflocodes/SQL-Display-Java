@@ -7,6 +7,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SceneChange {
+    /**
+     * change scene utility swaps the current scene to another scene
+     * @param event
+     * @param location
+     * @param windowName
+     * @throws IOException
+     */
     public static void changeScene(javafx.event.ActionEvent event, String location, String windowName) throws IOException {
         Object object = new Object(){};
         Parent root = FXMLLoader.load(object.getClass().getResource(location));

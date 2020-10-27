@@ -8,10 +8,18 @@ import models.Participant;
 import java.sql.*;
 import java.util.ArrayList;
 
+/**
+ * database utility
+ */
 public class DB {
-    private static String username = "root";
-    private static String password = "TheTiger-007";
+    private static String username = "student";
+    private static String password = "student";
 
+    /**
+     * retrive the entire port royale table from local database
+     * @return
+     * @throws SQLException
+     */
     public static ArrayList<Participant> getAllParticipants() throws SQLException {
         ArrayList<Participant> participants = new ArrayList<>();
         Connection conn = null;
@@ -46,6 +54,11 @@ public class DB {
         }
     }
 
+    /**
+     * retrive users and their scores from port royale database
+     * @return
+     * @throws SQLException
+     */
     public static XYChart.Series<String, Integer> getChartInfo() throws SQLException {
         XYChart.Series<String, Integer> chartInfo = new XYChart.Series<>();
         Connection conn = null;

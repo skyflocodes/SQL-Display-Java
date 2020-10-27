@@ -14,6 +14,9 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+/**
+ * controls the table view
+ */
 public class TableViewController implements Initializable {
 
     @FXML
@@ -34,11 +37,21 @@ public class TableViewController implements Initializable {
     @FXML
     private TableColumn<Participant, String> cPUColumn;
 
+    /**
+     * changes to chart view
+     * @param actionEvent
+     * @throws IOException
+     */
     public void changeToChartView(javafx.event.ActionEvent actionEvent) throws IOException {
         SceneChange.changeScene(actionEvent, "../views/ChartView.fxml", "Port Royale Records - Visuals");
     }
 
 
+    /**
+     * fills the table with database info
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         placeColumn.setCellValueFactory(new PropertyValueFactory<Participant,Integer>("Place"));
