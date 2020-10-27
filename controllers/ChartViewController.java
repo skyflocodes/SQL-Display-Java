@@ -12,31 +12,31 @@ import java.io.IOException;
 
 public class ChartViewController {
     @FXML
-    private BarChart UserChart;
+    private BarChart<String, Integer> userChart;
     @FXML
-    private PieChart GPUChart;
+    private PieChart gPUChart;
     @FXML
-    private PieChart CPUChart;
+    private PieChart cPUChart;
 
     public void changeToTableView(javafx.event.ActionEvent actionEvent) throws IOException {
         SceneChange.changeScene(actionEvent, "../views/TableView.fxml", "Port Royale Records - Table View");
     }
 
     public void displayUserChart(ActionEvent actionEvent) {
-        UserChart.setVisible(true);
-        GPUChart.setVisible(false);
-        CPUChart.setVisible(false);
+        userChart.setVisible(true);
+        gPUChart.setVisible(false);
+        cPUChart.setVisible(false);
     }
 
     public void displayGPUChart(ActionEvent actionEvent) {
-        UserChart.setVisible(false);
-        GPUChart.setVisible(true);
-        CPUChart.setVisible(false);
+        userChart.setVisible(false);
+        gPUChart.setVisible(true);
+        cPUChart.setVisible(false);
     }
 
     public void displayCPUChart(ActionEvent actionEvent) {
-        UserChart.setVisible(false);
-        GPUChart.setVisible(false);
-        CPUChart.setVisible(true);
+        userChart.setVisible(false);
+        gPUChart.setVisible(false);
+        cPUChart.setVisible(true);
     }
 }

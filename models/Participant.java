@@ -3,6 +3,7 @@ package models;
 public class Participant {
     private int place, score;
     private String user, CPU, GPU;
+    private String gpu;
 
     public Participant(int place, String user, int score, String GPU, String CPU){
         setPlace(place);

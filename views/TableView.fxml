@@ -9,13 +9,13 @@
    <children>
       <AnchorPane layoutX="534.0" layoutY="361.0" />
       <Button layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeToChartView" text="Chart View" />
-      <TableView layoutX="14.0" layoutY="10.0" prefHeight="342.0" prefWidth="569.0">
+      <TableView fx:id="table" layoutX="14.0" layoutY="10.0" prefHeight="342.0" prefWidth="569.0">
         <columns>
-          <TableColumn fx:id="PlaceColumn" prefWidth="35.0" text="Place" />
-          <TableColumn fx:id="UserColumn" prefWidth="96.0" text="User" />
-            <TableColumn fx:id="ScoreColumn" prefWidth="84.0" text="Score" />
-            <TableColumn fx:id="GPUColumn" prefWidth="164.0" text="GPU" />
-            <TableColumn fx:id="CPUColumn" prefWidth="189.0" text="CPU" />
+          <TableColumn fx:id="placeColumn" prefWidth="35.0" text="Place" />
+          <TableColumn fx:id="userColumn" prefWidth="96.0" text="User" />
+            <TableColumn fx:id="scoreColumn" prefWidth="84.0" text="Score" />
+            <TableColumn fx:id="gPUColumn" prefWidth="184.0" text="GPU" />
+            <TableColumn fx:id="cPUColumn" maxWidth="1.7976931348623157E308" prefWidth="169.0" text="CPU" />
         </columns>
       </TableView>
    </children>

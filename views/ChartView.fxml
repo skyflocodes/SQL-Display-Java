@@ -12,7 +12,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChartViewController">
    <children>
       <Button layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeToTableView" text="Table View" />
-      <BarChart fx:id="UserChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0">
+      <BarChart fx:id="userChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0">
          <xAxis>
             <CategoryAxis label="User" side="BOTTOM" />
          </xAxis>
@@ -20,8 +20,8 @@
             <NumberAxis label="Score" side="LEFT" />
          </yAxis>
       </BarChart>
-      <PieChart fx:id="GPUChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0" />
-      <PieChart fx:id="CPUChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0" />
+      <PieChart fx:id="gPUChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0" />
+      <PieChart fx:id="cPUChart" layoutX="61.0" layoutY="33.0" prefHeight="300.0" prefWidth="500.0" />
       <RadioButton layoutX="221.0" layoutY="334.0" mnemonicParsing="false" onAction="#displayUserChart" selected="true" text="User">
          <toggleGroup>
             <ToggleGroup fx:id="Chart" />
