@@ -1,3 +1,4 @@
+
 .root {
     -fx-background-color: #282828;
 }
@@ -9,31 +10,32 @@
     -fx-font-size: 12px;
 }
 
+
+
 .axis-label {
     -fx-text-fill: #e3d5c3;
     -fx-font-size: 16px;
 }
 
-/*///////////////////////*/
+.chart-title{
+    -fx-text-fill: #e3d5c3;
+    -fx-font-size: 25px;
+}
 
 .chart-plot-background {
     -fx-background-color: #3d3d3d;
 }
+
 .chart-horizontal-grid-lines {
-    -fx-stroke: #0388fc;
+    -fx-stroke: #3d3d3d;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #3d3d3d;
 }
 
-.chart-alternative-row-fill {
-    -fx-fill: #e3d5c3;
-}
 
-/*///////////////////////*/
 
 .table-view{
-    -fx-background-color: transparent;
-}
-
-.table-view:focused {
     -fx-background-color: transparent;
 }
 
@@ -58,10 +60,11 @@
     -fx-background-color: -fx-table-cell-border-color, #424242;
 }
 
-.table-row-cell:odd{
-    -fx-background-color: -fx-table-cell-border-color, #424242;
-}
-
-.table-row-cell:selected {
-    -fx-stroke: #0388fc;
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
 }

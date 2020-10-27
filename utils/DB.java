@@ -1,5 +1,8 @@
 package utils;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.chart.XYChart;
 import models.Participant;
 
 import java.sql.*;
@@ -40,6 +43,37 @@ public class DB {
                 sqlStatement.close();
             }
             return participants;
+        }
+    }
+
+    public static XYChart.Series<String, Integer> getChartInfo() throws SQLException {
+        XYChart.Series<String, Integer> chartInfo = new XYChart.Series<>();
+        Connection conn = null;
+        Statement sqlStatement = null;
+        ResultSet resultSet = null;
+        try{
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/portroyale",username,password);
+            sqlStatement = conn.createStatement();
+            resultSet = sqlStatement.executeQuery("SELECT * FROM portroyale.portrecords;");
+            while (resultSet.next()){
+                XYChart.Data<String, Integer> chartData = new XYChart.Data<String, Integer>(resultSet.getString("User"),
+                        resultSet.getInt("Score"));
+                chartInfo.getData().add(chartData);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        finally {
+            if(conn!= null){
+                conn.close();
+            }
+            if(resultSet != null){
+                resultSet.close();
+            }
+            if (sqlStatement != null){
+                sqlStatement.close();
+            }
+            return chartInfo;
         }
     }
 }
