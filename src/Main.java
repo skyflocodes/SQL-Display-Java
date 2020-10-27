@@ -9,8 +9,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("views/TableView.fxml"));
-        primaryStage.setTitle("Port Royale Records - Table View");
-        primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("Port Royale Records - Visuals");
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style/style.css").toExternalForm());
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
