@@ -1,25 +1,26 @@
 .root {
     -fx-background-color: #282828;
 }
+
 .button{
     -fx-background-color: #3d3d3d;
     -fx-text-fill: #e3d5c3;
     -fx-border-color: #e3d5c3;
-}
-.radio-button{
-    -fx-text-fill: #e3d5c3;
+    -fx-font-size: 12px;
 }
 
 .axis-label {
     -fx-text-fill: #e3d5c3;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
 }
+
+/*///////////////////////*/
 
 .chart-plot-background {
     -fx-background-color: #3d3d3d;
 }
 .chart-horizontal-grid-lines {
-    -fx-stroke: #8f0000;
+    -fx-stroke: #0388fc;
 }
 
 .chart-alternative-row-fill {
@@ -32,11 +33,9 @@
     -fx-background-color: transparent;
 }
 
-.table-view:focused{
+.table-view:focused {
     -fx-background-color: transparent;
 }
-
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .table-view .column-header-background{
     -fx-background-color: #3d3d3d;
@@ -64,5 +63,5 @@
 }
 
 .table-row-cell:selected {
-    -fx-stroke: #8f0000;
+    -fx-stroke: #0388fc;
 }
